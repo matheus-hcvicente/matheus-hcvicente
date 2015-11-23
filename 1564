@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<stdlib.h>
+  
+int main (){
+  
+ int n;
+ //Declaração de variavel
+ while (scanf("%d",&n) != EOF){
+ //Usei o comando while para saber qual resposta dar entre as duas opçoes.
+ if (n == 0)
+ printf("vai ter copa!\n");
+ else
+ printf("vai ter duas!\n");
+ }
+  
+    return 0;
+}
