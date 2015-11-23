@@ -1,0 +1,30 @@
+#include <stdlib.h>
+#include <stdio.h>
+  
+int main(){
+int a, b, c;
+char d;
+  
+double N[12][12];
+double soma = 0.0;
+ //Delaraçao de variaveis
+scanf("%d ", &b);
+scanf("%c",&d);
+ //leitura dos dados apresentados
+for(a = 0; a < 12; a++){
+    for(c = 0; c < 12; c++){
+        scanf("%lf",&N[a][c]);
+ //Pedi para fazer a repetição de formula utilizada dentro do scanf
+        if(a == b){
+            soma += N[a][c];
+        }
+    }
+}
+  
+if(d == 'S')
+    printf("%.1f\n", soma);
+else
+    printf("%.1f\n", soma/12.0);
+ //Opçao de verdadeiro ou falso 
+system("Pause");
+}
